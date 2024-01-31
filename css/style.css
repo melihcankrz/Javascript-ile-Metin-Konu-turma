@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #0a71f8;
+}
+::selection{
+    color: #FFF;
+    background-color: #0a71f8;
+}
+.wrapper{
+    width: 380px;
+    padding: 25px 30px;
+    border-radius: 8px;
+    background-color: #FFF;
+    box-shadow: 8px 8px 19px rgba(0, 0, 0, 0.5);
+}
+.wrapper header{
+    font-size: 25px;
+    font-weight: 500;
+    text-align: center;
+}
+.wrapper form{
+    margin: 34px 0 20px;
+}
+form .row{
+    display: flex;
+    margin-bottom: 20px;
+    flex-direction: column;
+}
+form .row label{
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+form .row:nth-child(2) label{
+    font-size: 15px;
+}
+form :where(button, textarea, select){
+    outline: none;
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 5px;
+}
+form .row textarea{
+    resize: none;
+    height: 110px;
+    font: 15px;
+    padding: 8px 10px;
+    border: 1px solid #949292;
+}
+form .row textarea::-webkit-scrollbar{
+    width: 0;
+}
+form .row .outer{
+    height: 46px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px;
+    border-radius: 5px;
+    border: 1px solid #949292;
+}
+form .row select{
+    font-size: 13px;
+    background: none;
+}
+form .row select::-webkit-scrollbar{
+    width: 8px;
+}
+form .row select::-webkit-scrollbar-track{
+    background: #FFF;
+}
+form .row select::-webkit-scrollbar-thumb{
+    background-color: #949292;
+    border-radius: 8px;
+    border-right: 2px solid #FFF;
+}
+form button{
+    height: 54px;
+    color: #FFF;
+    font-size: 16px;
+    background-color: #0a71f8;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.4s ease;
+    text-transform: uppercase;
+}
+form button:hover{
+    background-color: #096beb;
+}
+@media(max-width:400px) {
+    .wrapper{
+        max-width: 350px;
+        width: 100%;
+    }
+}
